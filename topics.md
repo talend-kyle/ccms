@@ -8,11 +8,11 @@ The create topic dialog opens. Select the topic type and select __Open in defaul
 
 ![create](./images/createTopicWindow.png)
 
-You need to add the new topic to a library version. When you do this, the topic will have a primary version value of the version you select. The primary version has no special status, but each topic must have a primary version which cannot be deleted.
+You need to add the new topic to a library version. When you do this, the topic will have a primary version value of the version you select. The primary version has no special status, but each topic must have a primary version, which cannot be deleted.
 
 ![version](./images/selectVersion.png)
 
-If the topic exists in only one version, then the unique topic is the primary version. 
+If the topic exists in only one version, then the topic is the primary version. 
 
 !!!Note
 If you want to jump ahead to how the versions work, see [About products and libraries](#About-products-and-libraries).
