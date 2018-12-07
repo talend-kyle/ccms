@@ -38,3 +38,15 @@ These topics are searchable, just as normal topics are.
 They are also searchable from a unique __Referable-Content__ window.
 
 ![search](./images/referableTopic1.png)
+
+## Adding topics to maps
+
+You can add topics to maps by dragging topics from the search results window onto an open map.
+
+If a map is open in the DITA map viewer when you directly add the topic to the map by checking the __Append to current map__ option. This restricts the version of the new topic to the same version of the current map.
+
+![AddToMap](./images/createTopicWhenMapOpen.png)
+
+See [Create a map](./maps.md) for more information on maps.
+
+
