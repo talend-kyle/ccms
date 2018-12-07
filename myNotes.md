@@ -42,6 +42,28 @@ If the topic exists in only one version, then the unique topic is the primary ve
 !!!Note
 If you want to jump ahead to how the versions work, see [About products and libraries](#About-products-and-libraries).
 
+### Editing and configuring the new topic
+
+The topic opens in the main editing window in the Oxygen author view. You can start writing your topic.
+
+When finished, click __Save__. You can close the topic after it has been saved. Your topic is immediately available through the CCMS search.
+
+![search](./images/searchResult.png)
+
+When you create a topic, it is automatically _locked_ to the user who creates it. You'll have to __release__ the topic. You can do this by right-clicking the topic and selecting __Release__. Now the topic is added to the repository and availble for all writers and admins.
+
+### Referable-content topics
+
+These topics are designed for snippets that can be referenced by other topics. You create referable topics the same way you create other topics.
+
+These topics are searchable, just as normal topics are.
+
+![search](./images/referableTopic.png)
+
+They are also searchable from a unique __Referable-Content__ window.
+
+![search](./images/referableTopic1.png)
+
 ## About products and libraries
 
 We have two items under the product category: __On prem__ and __Cloud__. In our CCMS environment, you can think products as partitions of the repository. The __Cloud__ partion contains the libraries that contain objects related to the cloud release(s). The __On prem__ partition contains the libraries that contain the objects related to all other releases.
