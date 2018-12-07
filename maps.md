@@ -44,6 +44,24 @@ From this view, you can add properties to map elements. Select a map element tha
 
 ![propertyvalue](./images/addPropertyValue.png)
 
+## Creating topic stubs
+
+A topic stub is a map skeleton with information about what content needs to be added in the future. You create topic stubs from the topic stub menu in the DITA map viewer.
+
+![topicStub](./images/topicStub.png)
+
+The topic stub is placed into the map, and you can move it around like any other topic. However, the topic does not yet exist in the repository, therefore it is not available from the search.
+
+![topicstub](./images/createTopicFromStub.png)
+
+To create a topic from the topic stub, select __Generate Topics from Stubs__ from the drop-down menu.
+
+![topicstub](./images/topicStubGenerate.png)
+
+
+
+![topicstub](./images/afterTopicStubGenerated.png)
+
 
 
 
