@@ -44,23 +44,48 @@ From this view, you can add properties to map elements. Select a map element tha
 
 ![propertyvalue](./images/addPropertyValue.png)
 
+### Adding submaps
+
+Maps can contain other maps. These maps are therefore submaps of the main map. You add submaps by dragging them into the main map. 
+
+If you are creating a submap from scratch, you have the option to select __Add to current map as submap__ when you are creating this map.
+
 ## Creating topic stubs
 
 A topic stub is a map skeleton with information about what content needs to be added in the future. You create topic stubs from the topic stub menu in the DITA map viewer.
 
 ![topicStub](./images/topicStub.png)
 
-The topic stub is placed into the map, and you can move it around like any other topic. However, the topic does not yet exist in the repository, therefore it is not available from the search.
+
+When you create the topic stub it is placed into the map, and you can move it around like any other topic. However, the topic does not yet exist in the repository, it is more like a placeholder. It is not available from the search. 
 
 ![topicstub](./images/createTopicFromStub.png)
+
+The only inidcation that it is a stub rather than a complete topic is from the greyed-out icon and it says type: `topic-type.xml`.
 
 To create a topic from the topic stub, select __Generate Topics from Stubs__ from the drop-down menu.
 
 ![topicstub](./images/topicStubGenerate.png)
 
-
+Once you generate the topic from the stub, it appears in the map with a normal topic icon and it is now searchable since it is added to the repository.
 
 ![topicstub](./images/afterTopicStubGenerated.png)
+
+## Relationship tables
+
+Relationship tables define the linking relationship among topics in a map. The relationship table keeps the link relationship outside of the topics themselves.
+
+To create a relationship table, you do this from the relationship table [perspective](#The-user-interface).
+
+Open the __RelTable Editing__ perspective.
+
+From this perspective, and with a map locked, right-click in the __relationship Table Editor__ to add a new relationship table.
+
+
+
+
+
+
 
 
 
