@@ -1,1 +1,8 @@
-site_name: My Docs
+site_name: My Notes on CCMS
+theme: psinder
+
+
+=========== TOC ============
+pages:
+- Home: index.md
+- User Interface: ui.md
