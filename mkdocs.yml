@@ -9,6 +9,12 @@ theme_dir: psinder
 nav:
 - About: index.md
 - Topics:
-  - User Interface: ui.md
+  - The user interface: ui.md
   - Searching for objects: search.md
+  - About products and libraries: productlibrary.md
+  - Creating topics: topics.md
+  - Creating maps: maps.md
+  - The document workflow: workflow.md
+  - Viewing versions: reviison.md
+  - Referencing content: refences.md
 
