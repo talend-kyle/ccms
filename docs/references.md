@@ -30,4 +30,4 @@ A common example of when to use keys is for toggling a specific word in a contex
 
 To add a keydef to a map, right-click the map then click __Inset element__.
 
-![keydef](.../images/keydef.png)
+![keydef](../images/keydef.png)
