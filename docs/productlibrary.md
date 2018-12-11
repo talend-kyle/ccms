@@ -10,9 +10,9 @@ When you add new objects into the CCMS, you need to add it to the relevant produ
 - Find the version your new topic or map needs corresponds to.
 - Find the library version that you need to add the new topic or map to.
 
-| Product   | Version relation to product   | To which library do I need to add my new topic/map? |
-| ---       | ---       | ---                                           | --- |
-| Cloud     | Spring '19| Spring '19              |
+| Product | Version relation to product | Where to add topic? |
+| ------------ | ------------- | ------------ |
+| Cloud | Spring '19  | Spring '19 |
 |           | Summer '19| 7.2 Summer '19              |
 |           | Fall '19  | Fall '19              |
 |           | Winter '20| 7.3 Winter '20              |

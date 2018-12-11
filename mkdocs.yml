@@ -2,9 +2,20 @@
 
 site_name: My Notes on CCMS
 site_author: Kyle Weishaar
-theme_dir: psinder
+theme:
+  name: 'material'
 # Uncomment the line below to specify a new local port if 8000 is busy.
 # dev_addr: 127.0.0.1:<your-port-number>`
+
+markdown_extensions:
+  - tables
+  - admonition #extension for the content boxes https://squidfunk.github.io/mkdocs-material/extensions/admonition/
+  - pymdownx.details #extension for making content boxes expandable https://facelessuser.github.io/pymdown-extensions/extensions/details/
+  - codehilite #code block extension https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+  - pymdownx.superfences # same as above
+  - toc:
+      permalink: true # this makes the headers into links https://squidfunk.github.io/mkdocs-material/extensions/permalinks/
+
 
 nav:
 - About: index.md
