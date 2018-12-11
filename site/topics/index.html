@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Kyle Weishaar">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Create a topic - My Notes on CCMS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">My Notes on CCMS</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../ui/">User Interface</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#create-a-topic">Create a topic</a></li>
+            <li><a href="#editing-and-configuring-the-new-topic">Editing and configuring the new topic</a></li>
+            <li><a href="#referable-content-topics">Referable-content topics</a></li>
+            <li><a href="#adding-topics-to-maps">Adding topics to maps</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="create-a-topic">Create a topic</h1>
+<p>You create topics from the toolbar by selecting <strong>IXIASOFT CCMS</strong>, then <strong>Create Topic</strong>, or from the icon toolbar. Topic templates are in a system configuration template folder. They are available to admins only.</p>
+<p><img alt="create" src="../images/createTopic.png" /></p>
+<p>The create topic dialog opens. Select the topic type and select <strong>Open in default editor</strong>.</p>
+<p><img alt="create" src="../images/createTopicWindow.png" /></p>
+<p>You need to add the new topic to a library version. When you do this, the topic will have a primary version value of the version you select. The primary version has no special status, but each topic must have a primary version, which cannot be deleted.</p>
+<p><img alt="version" src="../images/selectVersion.png" /></p>
+<p>If the topic exists in only one version, then the topic is the primary version. </p>
+<p>!!!Note
+If you want to jump ahead to how the versions work, see <a href="#About-products-and-libraries">About products and libraries</a>.</p>
+<h2 id="editing-and-configuring-the-new-topic">Editing and configuring the new topic</h2>
+<p>The topic opens in the main editing window in the Oxygen author view. You can start writing your topic.</p>
+<p>When finished, click <strong>Save</strong>. You can close the topic after it has been saved. Your topic is immediately available through the CCMS search.</p>
+<p><img alt="search" src="../images/searchResult.png" /></p>
+<p>When you create a topic, it is automatically <em>locked</em> to the user who creates it. You'll have to <strong>release</strong> the topic. You can do this by right-clicking the topic and selecting <strong>Release</strong>. Now the topic is added to the repository and availble for all writers and admins.</p>
+<h2 id="referable-content-topics">Referable-content topics</h2>
+<p>These topics are designed for snippets that can be referenced by other topics. You create referable topics the same way you create other topics.</p>
+<p>These topics are searchable, just as normal topics are.</p>
+<p><img alt="search" src="../images/referableTopic.png" /></p>
+<p>They are also searchable from a unique <strong>Referable-Content</strong> window.</p>
+<p><img alt="search" src="../images/referableTopic1.png" /></p>
+<h2 id="adding-topics-to-maps">Adding topics to maps</h2>
+<p>You can add topics to maps by dragging topics from the search results window onto an open map.</p>
+<p>If a map is open in the DITA map viewer when you directly add the topic to the map by checking the <strong>Append to current map</strong> option. This restricts the version of the new topic to the same version of the current map.</p>
+<p><img alt="AddToMap" src="../images/createTopicWhenMapOpen.png" /></p>
+<p>See <a href="../maps/">Create a map</a> for more information on maps.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

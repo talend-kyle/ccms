@@ -26,15 +26,15 @@ Every object in the CCMS has a status. The workflow of an object is a list of st
 
 To change a document status, unlock it first, then right-click it and select __Change status__.
 
-![changestatus](./images/changeStatus.png)
+![changestatus](../images/changeStatus.png)
 
 The workflow GUI opens. Here, you can see the specific object workflow. 
 
-![workflow](./images/workflow.png)
+![workflow](../images/workflow.png)
 
 When you select a new status from the GUI, the change is reflected beside the object in the CCMS.
 
-![changedstatus](./images/changedStatus.png)
+![changedstatus](../images/changedStatus.png)
 
 |Status | Description | After |
 |---    | --- | --- |
@@ -47,11 +47,11 @@ You can leave change status comments whenever you change the status.
 
 Statuses of objects higher in the document hierarchy cannot change before the dependents. For example, you cannot change a map to `done` unless all topics nested under the map are also in `done`.
 
-![notdone](./images/cannotChangeStatus.png)
+![notdone](../images/cannotChangeStatus.png)
 
 These status dependencies prevent the parent from moving to a status ahead of its children. Likewise, when you change the status of a topic from `done` to `work`, the parent will also change.
 
-![images](./images/parentChange.png)
+![images](../images/parentChange.png)
 
 ### Assignments and assignees
 
@@ -59,14 +59,14 @@ Assignments are defined in the `roles.xml` file in the administration tool.
 
 To assign a person to a topic, right-click the topic and click __Assign__.
 
-![assign](./images/assign.png)
+![assign](../images/assign.png)
 
 The assign dialog opens. Here you can select writers, subject-matter experts, reviewers, etc. to topics based on the roles defined by the administrator in the `roles.xml` file.
 
-![assign](./images/assingTo.png)
+![assign](../images/assingTo.png)
 
 Objects that are assigned to you appear in the __Todo__ tab. 
 
-![todo](./images/todoList.png)
+![todo](../images/todoList.png)
 
 Notice in the dialog above that some objects are listed more than once. They correspond to the same objects in different versions. When you change the status of an object that you are working on from `work` to `review`, the object is removed for you active todo list and it is placed in your __Incoming list__.

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Kyle Weishaar">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Create a map - My Notes on CCMS</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">My Notes on CCMS</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li >
+                                <a href="../ui/">User Interface</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#create-a-map">Create a map</a></li>
+            <li><a href="#editing-and-configuring-new-maps">Editing and configuring new maps</a></li>
+            <li><a href="#creating-topic-stubs">Creating topic stubs</a></li>
+            <li><a href="#relationship-tables">Relationship tables</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="create-a-map">Create a map</h1>
+<p>You create maps from the toolbar by selecting <strong>IXIASOFT CCMS</strong>, then <strong>Create Map</strong>, or from the icon toolbar. Map templates are in a system configuration template folder. They are available to admins only.</p>
+<p><img alt="create" src="../images/createTopic.png" /></p>
+<p>The create map dialog opens. Select the map type and select <strong>Open in DITA map editor</strong>.</p>
+<p>You need to add the new map to a library version. When you do this, the map will have a primary version value of the version you select. The primary version has no special status, but each map must have a primary version, which cannot be deleted.</p>
+<p><img alt="version" src="../images/selectVersion.png" /></p>
+<p>If the map exists in only one version, then the map is the primary version. </p>
+<p>!!!Note
+If you want to jump ahead to how the versions work, see <a href="#About-products-and-libraries">About products and libraries</a>.</p>
+<h2 id="editing-and-configuring-new-maps">Editing and configuring new maps</h2>
+<p>When you open the map, it opens in the DITA MAP viewer. You can start adding topics to the map. To do this, you can drag topics from the search onto the map. </p>
+<p>!!! Note
+The map must be locked to add topics. If the map is locked but you still get an error message that says "The map is not locked", then you can refresh the map by clicking the <strong>Refresh</strong> button on the bottom of the DITA map viewer.</p>
+<p>You can organize topic heirarchy by dragging topics or by using the yellow arrows above the map. </p>
+<p>Another way to add topics to a map is in the <strong>Create Topic</strong> dialog. Check the box <strong>Append topic to current map</strong>.</p>
+<p><img alt="append" src="../images/appendToMap.png" /></p>
+<p>When you add a topic this way, the topic version is restricted to the same version as the current map.</p>
+<h3 id="elements-and-properties">Elements and properties</h3>
+<p>You can add elements by right-clicking somewhere in the map and selecting <strong>Add element</strong>.</p>
+<p><img alt="elements" src="../images/insertElement.png" /></p>
+<p>For example, you can add a <code>&lt;tablehead&gt;</code> element to the map. You can edit the meta data of map elements with the properties view. You can open the <strong>Properties</strong> window from the <strong>Show View</strong> menu.</p>
+<p><img alt="showview" src="../images/showView.png" /></p>
+<p>From this view, you can add properties to map elements. Select a map element that you want to add a property to, then enter the value to the property.</p>
+<p><img alt="propertyvalue" src="../images/addPropertyValue.png" /></p>
+<h3 id="adding-submaps">Adding submaps</h3>
+<p>Maps can contain other maps. These maps are therefore submaps of the main map. You add submaps by dragging them into the main map. </p>
+<p>If you are creating a submap from scratch, you have the option to select <strong>Add to current map as submap</strong> when you are creating this map.</p>
+<h2 id="creating-topic-stubs">Creating topic stubs</h2>
+<p>A topic stub is a map skeleton with information about what content needs to be added in the future. You create topic stubs from the topic stub menu in the DITA map viewer.</p>
+<p><img alt="topicStub" src="../images/topicStub.png" /></p>
+<p>When you create the topic stub it is placed into the map, and you can move it around like any other topic. However, the topic does not yet exist in the repository, it is more like a placeholder. It is not available from the search. </p>
+<p><img alt="topicstub" src="../images/createTopicFromStub.png" /></p>
+<p>The only inidcation that it is a stub rather than a complete topic is from the greyed-out icon and it says type: <code>topic-type.xml</code>.</p>
+<p>To create a topic from the topic stub, select <strong>Generate Topics from Stubs</strong> from the drop-down menu.</p>
+<p><img alt="topicstub" src="../images/topicStubGenerate.png" /></p>
+<p>Once you generate the topic from the stub, it appears in the map with a normal topic icon and it is now searchable since it is added to the repository.</p>
+<p><img alt="topicstub" src="../images/afterTopicStubGenerated.png" /></p>
+<h2 id="relationship-tables">Relationship tables</h2>
+<p>Relationship tables define the linking relationship among topics in a map. The relationship table keeps the link relationship outside of the topics themselves.</p>
+<p>To create a relationship table, you do this from the relationship table <a href="#The-user-interface">perspective</a>.</p>
+<p>Open the <strong>RelTable Editing</strong> perspective.</p>
+<p>From this perspective, and with a map locked, right-click in the <strong>relationship Table Editor</strong> to add a new relationship table.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,8 +1,14 @@
+# CCMS Notes
+
 site_name: My Notes on CCMS
-theme: psinder
+site_author: Kyle Weishaar
+theme_dir: psinder
+# Uncomment the line below to specify a new local port if 8000 is busy.
+# dev_addr: 127.0.0.1:<your-port-number>`
 
+nav:
+- About: index.md
+- Topics:
+  - User Interface: ui.md
+  - Searching for objects: search.md
 
-=========== TOC ============
-pages:
-- Home: index.md
-- User Interface: ui.md
